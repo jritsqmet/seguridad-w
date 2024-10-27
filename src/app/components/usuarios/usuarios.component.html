@@ -1,0 +1,55 @@
+
+<select class="form-control" [(ngModel)]="genero" >
+    <option value="todos">Todos</option>
+    <option value="male">Masculino</option>
+    <option value="female">Femenino</option>
+</select>
+
+<div class="row"> 
+
+
+    @for(item of usuarios; track item){
+
+        @if(item.gender == genero){
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header">{{item.name.first}} {{item.name.last}}</div>
+                    
+                    <div class="card-body">
+                        <img src={{item.picture.large}} alt="">
+                    </div> 
+
+                    <div class="card-footer">
+                        Ciudad: {{item.location.city}}
+                        <button class="btn btn-primary" [routerLink]="['/usuarios', item.id.name]">DETALLES</button>
+                    </div>
+
+                </div>
+            </div>
+        } 
+        
+        @if (genero == 'todos'){
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header">{{item.name.first}} {{item.name.last}}</div>
+                    
+                    <div class="card-body">
+                        <img src={{item.picture.large}} alt="">
+                    </div> 
+
+                    <div class="card-footer">
+                        Ciudad: {{item.location.city}}
+                        <button class="btn btn-primary" [routerLink]="['/usuarios', item.id.name]">DETALLES</button>
+                    </div>
+
+                </div>
+            </div>
+        }
+    }
+
+
+
+</div>
+
+

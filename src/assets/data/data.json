@@ -1,0 +1,41 @@
+{
+  "users": [
+    {
+      "email": "ana@mail.com",
+      "password": "$2a$10$IwevcCONf1POMurPagcEiu4HS3O/MFRXSr/3iFLgwm2aQbf7bVK/y",
+      "id": 1
+    },
+    {
+      "email": "juan@mail.com",
+      "password": "$2a$10$iRh3Cz4baqfDuCmx0vISAeR3RfTDtBIdchgiVlDOqcV9Rz1RS.KB6",
+      "nick": "juan34",
+      "id": 2
+    },
+    {
+      "email": "ana@yop.com",
+      "password": "$2a$10$5v3okuzcJ.8Dgg.AUGk/u.gQwA4Cgya760erhBlDqsc3ZZpULCkjG",
+      "nick": "ana23",
+      "id": 3
+    }
+  ],
+  "autores": [
+    {
+      "id": "1",
+      "nombre": "Gabriel",
+      "apellido": "García Márquez",
+      "email": "ggmarquez@example.com"
+    },
+    {
+      "id": "2",
+      "nombre": "J.K.",
+      "apellido": "Rowling",
+      "email": "jkrowling@example2.com"
+    },
+    {
+      "id": "3",
+      "nombre": "George",
+      "apellido": "Orwell",
+      "email": "gorwell@example.com"
+    }
+  ]
+}
