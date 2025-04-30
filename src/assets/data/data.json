@@ -16,12 +16,23 @@
       "password": "$2a$10$5v3okuzcJ.8Dgg.AUGk/u.gQwA4Cgya760erhBlDqsc3ZZpULCkjG",
       "nick": "ana23",
       "id": 3
+    },
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$zHKEajJQtRqUQe.xtEJvWOU.cQnP5e9n.lw1FPBA5yIbtL46aRiKy",
+      "id": 4
+    },
+    {
+      "email": "aaa@yopmail.com",
+      "password": "$2a$10$jAFcHFiH/i8MPHz.NJ9L7O0NtT/333tasjERIz1gm3IFcs7DO/yra",
+      "nick": "aaa",
+      "id": 5
     }
   ],
   "autores": [
     {
       "id": "1",
-      "nombre": "Gabriel",
+      "nombre": "Gabriela",
       "apellido": "García Márquez",
       "email": "ggmarquez@example.com"
     },
@@ -36,6 +47,12 @@
       "nombre": "George",
       "apellido": "Orwell",
       "email": "gorwell@example.com"
+    },
+    {
+      "id": "5",
+      "nombre": "Nicolas",
+      "apellido": "Maquiavelo",
+      "email": "nm@yop.com"
     }
   ]
 }

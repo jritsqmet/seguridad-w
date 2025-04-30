@@ -10,7 +10,7 @@ export class LibrosService {
   constructor(private http: HttpClient) { }
 
   //private API_AUTOR = "http://localhost:9090/autores"
-  private API_AUTOR = "http://localhost:3000/autores"
+  private API_AUTOR = "http://192.168.102.28:3000/autores"
 
 
   getProducto():Observable<any>{
