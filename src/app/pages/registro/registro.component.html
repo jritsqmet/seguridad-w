@@ -1,20 +1,80 @@
-<form (ngSubmit)="registrar(formulario)" #formulario="ngForm">
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+      <div class="card border-0 shadow-sm">
+        <div class="card-body p-4 p-md-5">
+          <h2 class="text-center mb-4">Crea tu cuenta</h2>
+          
+          <form (ngSubmit)="registrar(formulario)" #formulario="ngForm">
 
-    <div class="mb-3 mt-3">
-      <label for="email" class="form-label">Email:</label>
-      <input type="email" class="form-control" name="email" [(ngModel)]="email">
-    </div>
+            <!-- Email -->
+            <div class="mb-3">
+              <label for="email" class="form-label fw-semibold">Correo electrónico</label>
+              <div class="input-group">
+                <span class="input-group-text bg-light">
+                  <i class="bi bi-envelope"></i>
+                </span>
+                <input 
+                  type="email" 
+                  class="form-control form-control-lg" 
+                  name="email" 
+                  [(ngModel)]="email"
+                  placeholder="tucorreo@ejemplo.com"
+                >
+              </div>
+            </div>
 
-    <div class="mb-3">
-      <label for="pwd" class="form-label">nick:</label>
-      <input type="text" class="form-control" name="nick" [(ngModel)]="nick">
-    </div>
+            <!-- Nickname -->
+            <div class="mb-3">
+              <label for="nick" class="form-label fw-semibold">Nombre de usuario</label>
+              <div class="input-group">
+                <span class="input-group-text bg-light">
+                  <i class="bi bi-person"></i>
+                </span>
+                <input 
+                  type="text" 
+                  class="form-control form-control-lg" 
+                  name="nick" 
+                  [(ngModel)]="nick"
+                  placeholder="Tu nickname"
+                >
+              </div>
+            </div>
 
-    <div class="mb-3">
-        <label for="pwd" class="form-label">Password:</label>
-        <input type="password" class="form-control" name="password" [(ngModel)]="password">
+            <!-- Password -->
+            <div class="mb-4">
+              <label for="password" class="form-label fw-semibold">Contraseña</label>
+              <div class="input-group">
+                <span class="input-group-text bg-light">
+                  <i class="bi bi-lock"></i>
+                </span>
+                <input 
+                  type="password" 
+                  class="form-control form-control-lg" 
+                  name="password" 
+                  [(ngModel)]="password"
+                  placeholder="••••••••"
+                >
+              </div>
+              <div class="form-text mt-1">Mínimo 6 caracteres</div>
+            </div>
+
+            <!-- Submit Button -->
+            <button 
+              type="submit" 
+              class="btn btn-primary w-100 py-2 fw-bold"
+            >
+              Registrarse ahora
+            </button>
+
+            <div class="text-center mt-3">
+              <p class="text-muted">¿Ya tienes cuenta? 
+                <a routerLink="/login" class="text-decoration-none fw-semibold">Inicia sesión</a>
+              </p>
+            </div>
+          </form>
+        </div>
       </div>
-   
-    <button type="submit" class="btn btn-primary">Submit</button>
-
-</form>
+    </div>
+  </div>
+</div>
