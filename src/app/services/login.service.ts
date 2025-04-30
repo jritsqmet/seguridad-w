@@ -10,14 +10,14 @@ export class LoginService {
   constructor( private http:HttpClient) { }
 
   /// LOGIN
-  private API_ADMIN= 'http://localhost:3000/login'
+  private API_ADMIN= 'http://192.168.102.28:3000/login'
 
   postLogin( user : any):Observable<any>{
     return this.http.post(this.API_ADMIN,user )
   }
 
   ///REGISTRO
-  private API_REGISTRO= 'http://localhost:3000/users'
+  private API_REGISTRO= 'http://192.168.102.28:3000/users'
 
   postRegistro( user : any):Observable<any>{
     return this.http.post(this.API_REGISTRO,user )

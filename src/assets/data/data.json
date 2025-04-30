@@ -21,12 +21,6 @@
       "email": "olivier@mail.com",
       "password": "$2a$10$zHKEajJQtRqUQe.xtEJvWOU.cQnP5e9n.lw1FPBA5yIbtL46aRiKy",
       "id": 4
-    },
-    {
-      "email": "aaa@yopmail.com",
-      "password": "$2a$10$jAFcHFiH/i8MPHz.NJ9L7O0NtT/333tasjERIz1gm3IFcs7DO/yra",
-      "nick": "aaa",
-      "id": 5
     }
   ],
   "autores": [

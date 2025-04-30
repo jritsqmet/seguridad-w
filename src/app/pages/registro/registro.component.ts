@@ -11,15 +11,22 @@ import { FormsModule } from '@angular/forms';
 })
 export class RegistroComponent {
 
-  email:any
-  password:any
-  nick:any
+  email: any
+  password: any
+  nick: any
 
   servicio = inject(LoginService)
 
-  registrar( datos: any ){
-    this.servicio.postRegistro( datos.value).subscribe()
-    location.href= 'login'
+  registrar(datos: any) {
+    this.servicio.postRegistro(datos.value).subscribe(u => {
+      if (u.accessToken != '') {
+        location.href = 'login'
+      }
+    }
+    )
+
+
+
   }
 
 
