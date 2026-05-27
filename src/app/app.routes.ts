@@ -6,6 +6,7 @@ import { DetallesComponent } from './pages/detalles/detalles.component';
 import { loginGuard } from './guards/login.guard';
 import { GestionComponent } from './pages/gestion/gestion.component';
 import { AutorComponent } from './pages/autor/autor.component';
+import { Error404Component } from './pages/error404/error404.component';
 
 export const routes: Routes = [
 
@@ -17,6 +18,6 @@ export const routes: Routes = [
 
 
     { path: 'usuarios/:idUsuarios', component: DetallesComponent},
-    { path: '**', component: LoginComponent }
+    { path: '**', component: Error404Component }
 
 ];
