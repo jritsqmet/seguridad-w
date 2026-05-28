@@ -1,0 +1,81 @@
+.not-found-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.not-found-content {
+  text-align: center;
+  max-width: 550px;
+  width: 100%;
+}
+
+.not-found-img {
+  width: 100%;
+  max-width: 300px; 
+  height: auto;
+  margin-bottom: 2rem;
+
+  animation: float 3s ease-in-out infinite;
+}
+
+.not-found-title {
+  font-size: clamp(4rem, 10vw, 6rem);
+  font-weight: 900;
+  color: #1e293b;
+  margin: 0 0 0.5rem;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.not-found-message {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: #475569;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.not-found-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  background-color: #4f46e5;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.35);
+}
+
+.not-found-btn:hover {
+  background-color: #4338ca;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.45);
+}
+
+.not-found-btn:active {
+  transform: translateY(0);
+}
+
+/* Animación de flotación para el SVG */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .not-found-container {
+    padding: 1.5rem;
+  }
+  .not-found-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
